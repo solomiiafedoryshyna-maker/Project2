@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HealthSpecialist — Desktop</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <svg viewBox="0 0 64 64" aria-hidden="true">
+      <circle cx="22" cy="18" r="6"/>
+      <circle cx="12" cy="28" r="6"/>
+      <circle cx="32" cy="28" r="6"/>
+      <circle cx="22" cy="38" r="6"/>
+    </svg>
+    <div class="wordmark"><span class="health">Health</span><span class="specialist">Specialist</span></div>
+  </div>
+
+  <nav>
+    <a href="#">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <a href="#">SERVICES</a>
+
+    <div class="nav-item">
+      <label for="doctors-toggle">DOCTORS</label>
+      <input type="checkbox" id="doctors-toggle">
+      <div class="doctors-dropdown">
+        <button class="doctor-pill">Phillis K Vance MD</button>
+        <button class="doctor-pill">Stanley K Hudson MD</button>
+        <button class="doctor-pill">Kevin D Malone MD</button>
+        <button class="doctor-pill">Angela S Martin MD</button>
+      </div>
+    </div>
+    <a href="#">CONTACT</a>
+  </nav>
+
+  <div class="header-actions">
+    <button class="btn btn-login">LOG IN</button>
+    <button class="btn btn-signup">SIGN UP</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-left">
+    <h1>Dedicated Health<br>Care Specialists</h1>
+    <p lang="zxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p lang="zxx">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <a class="cta" href="#">LEARN MORE</a>
+  </div>
+  <div class="hero-right">
+    <img src="images/ambulance.png" alt="Ambulance">
+  </div>
+</section>
+
+<section class="cards">
+  <h2 class="sr-only">Key information cards</h2>
+  <article class="card">
+    <h3>EMERGENCIES</h3>
+    <p lang="zxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <button class="btn-primary">MORE INFO</button>
+  </article>
+  <article class="card">
+    <h3>OPERATING HOURS</h3>
+    <div class="hours">
+      <p><span>MONDAY - FRIDAY</span><span>08:00–18:00</span></p>
+      <p><span>SATURDAY</span><span>10:00–16:00</span></p>
+      <p><span>SUNDAY</span><span>10:00–14:00</span></p>
+    </div>
+    <button class="btn-primary">MAKE AN APPOINTMENT</button>
+  </article>
+  <article class="card">
+    <h3>TEST RESULTS</h3>
+    <p lang="zxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <button class="btn-primary">CHECK TEST</button>
+  </article>
+</section>
+
+<section class="section" id="doctors">
+  <h2>Doctors</h2>
+  <div class="doctors-wrap">
+    <button class="scroll-btn scroll-left" data-dir="-1" aria-label="Scroll left">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+
+    <div class="doctors-scroll" id="doctorsScroll">
+      <div class="doctors-row">
+        <article class="doc-card">
+          <div class="doc-avatar"><img src="images/doctor1.png" alt="Phillis K Vance MD"></div>
+          <div class="doc-info">
+            <h3 class="doc-name">Phillis K Vance MD</h3>
+            <button class="tag" type="button">Family Medicine</button>
+          </div>
+        </article>
+
+        <article class="doc-card">
+          <div class="doc-avatar"><img src="images/doctor2.png" alt="Stanley K Hudson MD"></div>
+          <div class="doc-info">
+            <h3 class="doc-name">Stanley K Hudson MD</h3>
+            <button class="tag" type="button">Internal Medicine</button>
+          </div>
+        </article>
+
+        <article class="doc-card">
+          <div class="doc-avatar"><img src="images/doctor3.png" alt="Kevin D Malone MD"></div>
+          <div class="doc-info">
+            <h3 class="doc-name">Kevin D Malone MD</h3>
+            <button class="tag" type="button">Cardiology</button>
+          </div>
+        </article>
+
+        <article class="doc-card">
+          <div class="doc-avatar"><img src="images/doctor4.png" alt="Angela S Martin MD"></div>
+          <div class="doc-info">
+            <h3 class="doc-name">Angela S Martin MD</h3>
+            <button class="tag" type="button">Physical Therapy</button>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <button class="scroll-btn scroll-right" data-dir="1" aria-label="Scroll right">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </button>
+  </div>
+</section>
+
+
+<footer>
+  <div class="footer-grid">
+    <div class="fcol">
+      <div class="footer-brand">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <circle cx="22" cy="18" r="6"/><circle cx="12" cy="28" r="6"/><circle cx="32" cy="28" r="6"/><circle cx="22" cy="38" r="6"/>
+        </svg>
+        <div class="name"><b>Health</b><span>Specialist</span></div>
+      </div>
+    </div>
+    <div class="fcol">
+      <h6>SERVICES</h6>
+      <ul><li>Family Medicine</li><li>Internal Medicine</li><li>Cardiology</li><li>Physical Therapy</li></ul>
+    </div>
+    <div class="fcol">
+      <h6>DOCTORS</h6>
+      <ul><li>Phillis K Vance MD</li><li>Stanley K Hudson  MD</li><li>Kevin D Malone MD</li><li>Angela S Martin MD</li></ul> 
+    </div>
+    <div class="fcol">
+      <h6>CONTACT</h6>
+      <button class="contact-btn" type="button" aria-label="Call (404)123 - 4567">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12 .86.34 1.7.64 2.5a2 2 0 0 1-.45 2.11L8 9a16 16 0 0 0 7 7l.67-1.25a2 2 0 0 1 2.11-.45c.8 .3 1.64 .52 2.5 .64A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        (404)123 - 4567
+      </button>
+    </div>
+  </div>
+  <div class="footer-bar"></div>
+</footer>
+
+<script>
+(function(){
+  const scroller = document.getElementById('doctorsScroll');
+  if(!scroller) return;
+
+  // Drag-to-scroll
+  let isDown=false,startX=0,startLeft=0;
+  const down = x => {isDown=true;scroller.classList.add('dragging');startX=x-scroller.getBoundingClientRect().left;startLeft=scroller.scrollLeft;}
+  const move = (x,e)=>{if(!isDown)return;e&&e.preventDefault();const dx=x-scroller.getBoundingClientRect().left;scroller.scrollLeft=startLeft-(dx-startX);}
+  const up = ()=>{isDown=false;scroller.classList.remove('dragging');}
+  scroller.addEventListener('mousedown',e=>down(e.clientX));
+  scroller.addEventListener('mousemove',e=>move(e.clientX,e));
+  window.addEventListener('mouseup',up);
+  scroller.addEventListener('mouseleave',up);
+  scroller.addEventListener('touchstart',e=>down(e.touches[0].clientX),{passive:true});
+  scroller.addEventListener('touchmove',e=>move(e.touches[0].clientX,e),{passive:false});
+  scroller.addEventListener('touchend',up);
+
+  // Arrow buttons 
+  const step=()=>{const c=scroller.querySelector('.doc-card');const gap=40;return (c?c.getBoundingClientRect().width+gap:520);}
+  document.querySelectorAll('.scroll-btn').forEach(b=>b.addEventListener('click',()=>{
+    const dir=Number(b.dataset.dir||1);
+    scroller.scrollBy({left:dir*step(),behavior:'smooth'});
+  }));
+})();
+</script>
+</body>
+</html>
