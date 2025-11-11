@@ -55,7 +55,7 @@ nav a,nav label{color:#fff;font-weight:600;font-size:13px;text-decoration:none;c
 .btn-signup{background:#fff;color:var(--blue)}
 .btn-signup:hover{background:var(--blue-soft);color:#fff}
 
-/* ============== NAV dropdown (Doctors) ============== */
+
 #doctors-toggle{display:none}
 .nav-item{position:relative;display:inline-flex;align-items:center}
 .doctors-dropdown{
