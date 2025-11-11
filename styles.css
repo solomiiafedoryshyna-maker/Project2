@@ -30,7 +30,6 @@ button:hover,.btn:hover,.cta:hover,.btn-primary:hover,.contact-btn:hover,.doctor
   box-shadow:0 10px 24px rgba(59,130,246,.25);
 }
 
-/* ================= HEADER ================= */
 header{
   background:var(--blue);
   color:#fff;
