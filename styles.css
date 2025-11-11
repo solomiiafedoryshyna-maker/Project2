@@ -209,18 +209,18 @@ footer{margin-top:88px; background:#F7FAFF}
 
 
 
-/* Загальна плавність для всіх кнопок і бейджів */
+
 button, .btn, .cta, .btn-primary, .contact-btn, .doctor-pill, .tag {
   transition: transform .15s ease, box-shadow .15s ease;
 }
 
-/* Ефект при наведенні для звичайних кнопок (з підсвічуванням) */
+
 button:hover, .btn:hover, .cta:hover, .btn-primary:hover, .contact-btn:hover, .doctor-pill:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 18px rgba(59,130,246,.35); /* синювате світіння */
+  box-shadow: 0 0 18px rgba(59,130,246,.35); 
 }
 
-/* Чорні бейджі — рухаються так само, але БЕЗ підсвічування */
+
 .tag {
   display: inline-flex;
   align-items: center;
@@ -232,7 +232,7 @@ button:hover, .btn:hover, .cta:hover, .btn-primary:hover, .contact-btn:hover, .d
 .tag:hover,
 .tag:focus-visible {
   transform: scale(1.05);
-  box-shadow: none;   /* без світіння */
+  box-shadow: none;   
   outline: none;
 }
 .tag:active { transform: scale(.97); }
@@ -240,8 +240,6 @@ button:hover, .btn:hover, .cta:hover, .btn-primary:hover, .contact-btn:hover, .d
 @media (prefers-reduced-motion: reduce){
   button, .btn, .cta, .btn-primary, .contact-btn, .doctor-pill, .tag { transition: none; }
 }
-
-
 
   .my-button {
   height: 40px;
@@ -256,15 +254,12 @@ button:hover, .btn:hover, .cta:hover, .btn-primary:hover, .contact-btn:hover, .d
   cursor: pointer;
 }
 
-
-
 .tag:hover {
   background: #2F3342; 
   color: #fff;         
   box-shadow: 0 0 20px rgba(59,130,246,0.45);
   transform: scale(1.06);
 }
-
 
 .tag:focus-visible {
   outline: 3px solid var(--blue-soft);

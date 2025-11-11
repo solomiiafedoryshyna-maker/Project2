@@ -165,7 +165,7 @@
   const scroller = document.getElementById('doctorsScroll');
   if(!scroller) return;
 
-  // Drag-to-scroll
+  
   let isDown=false,startX=0,startLeft=0;
   const down = x => {isDown=true;scroller.classList.add('dragging');startX=x-scroller.getBoundingClientRect().left;startLeft=scroller.scrollLeft;}
   const move = (x,e)=>{if(!isDown)return;e&&e.preventDefault();const dx=x-scroller.getBoundingClientRect().left;scroller.scrollLeft=startLeft-(dx-startX);}
@@ -178,7 +178,7 @@
   scroller.addEventListener('touchmove',e=>move(e.touches[0].clientX,e),{passive:false});
   scroller.addEventListener('touchend',up);
 
-  // Arrow buttons 
+  
   const step=()=>{const c=scroller.querySelector('.doc-card');const gap=40;return (c?c.getBoundingClientRect().width+gap:520);}
   document.querySelectorAll('.scroll-btn').forEach(b=>b.addEventListener('click',()=>{
     const dir=Number(b.dataset.dir||1);

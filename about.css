@@ -117,7 +117,7 @@ h2{font-size:36px;font-weight:800;margin-bottom:16px}
 .tl-card h3{font-size:18px;font-weight:800;margin-bottom:8px}
 .tl-card p{color:#6b7280;font-size:15px}
 
-/* FAQ */
+
 .faq-list{display:grid;gap:18px;margin-top:10px}
 .faq-list details{background:#fff;border-radius:12px;box-shadow:var(--shadow);padding:20px 24px}
 .faq-list summary{cursor:pointer;font-weight:700;font-size:18px}
